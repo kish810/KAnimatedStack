@@ -14,11 +14,13 @@ class AddressCell: UITableViewCell {
         switch reuseIdentifier {
         case "home":
             self.textLabel?.text = "Home"
-            self.detailTextLabel?.text = "450, ABC flat, Sample Street,\n Sample Road,\n Chennai - 600001"
+            self.detailTextLabel?.text = "450, ABC flat,\nSample Street,\nSample Road,\nChennai - 600001"
         default:
             self.textLabel?.text = "Office"
-            self.detailTextLabel?.text = "Sample Company Pvt. Ltd.,\n Sample Road,\n Chennai - 600001"
+            self.detailTextLabel?.text = "Sample Company Pvt. Ltd.,\nSample Road,\nChennai - 600001"
         }
+        
+        self.detailTextLabel?.numberOfLines = 0
         
         self.selectedBackgroundView = UIView()
         self.selectedBackgroundView?.backgroundColor = UIColor.systemPink.withAlphaComponent(0.2)
@@ -31,8 +33,6 @@ class AddressCell: UITableViewCell {
 
 class AddressViewController: UITableViewController {
     
-    var selectedIndex: Int = 0
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configureView()
