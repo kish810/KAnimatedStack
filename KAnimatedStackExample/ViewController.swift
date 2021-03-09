@@ -46,9 +46,9 @@ extension ViewController: StackViewDelegate {
         case 0:
             return FoodViewController()
         case 1:
-            return FoodViewController()
+            return AddressViewController()
         default:
-            return FoodViewController()
+            return PaymentViewController()
         }
     }
     

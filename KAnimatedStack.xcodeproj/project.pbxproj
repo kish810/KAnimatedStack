@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		039346CE25F744F80046E7DD /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039346CD25F744F80046E7DD /* FoodViewController.swift */; };
+		039346D125F74E600046E7DD /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039346D025F74E600046E7DD /* AddressViewController.swift */; };
+		039346D425F74E710046E7DD /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039346D325F74E710046E7DD /* PaymentViewController.swift */; };
 		03E9C8E425F65C4A00B7B1C1 /* KAnimatedStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E9C8E225F65C4A00B7B1C1 /* KAnimatedStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03E9C8F225F65C7700B7B1C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E9C8F125F65C7700B7B1C1 /* AppDelegate.swift */; };
 		03E9C8F425F65C7700B7B1C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E9C8F325F65C7700B7B1C1 /* SceneDelegate.swift */; };
@@ -47,6 +49,8 @@
 
 /* Begin PBXFileReference section */
 		039346CD25F744F80046E7DD /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		039346D025F74E600046E7DD /* AddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
+		039346D325F74E710046E7DD /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		03E9C8DF25F65C4A00B7B1C1 /* KAnimatedStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KAnimatedStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E9C8E225F65C4A00B7B1C1 /* KAnimatedStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAnimatedStack.h; sourceTree = "<group>"; };
 		03E9C8E325F65C4A00B7B1C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 				03E9C8F325F65C7700B7B1C1 /* SceneDelegate.swift */,
 				03E9C8F525F65C7700B7B1C1 /* ViewController.swift */,
 				039346CD25F744F80046E7DD /* FoodViewController.swift */,
+				039346D025F74E600046E7DD /* AddressViewController.swift */,
+				039346D325F74E710046E7DD /* PaymentViewController.swift */,
 				03E9C8F725F65C7700B7B1C1 /* Main.storyboard */,
 				03E9C8FA25F65C7D00B7B1C1 /* Assets.xcassets */,
 				03E9C8FC25F65C7D00B7B1C1 /* LaunchScreen.storyboard */,
@@ -264,8 +270,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				03E9C8F625F65C7700B7B1C1 /* ViewController.swift in Sources */,
+				039346D425F74E710046E7DD /* PaymentViewController.swift in Sources */,
 				03E9C8F225F65C7700B7B1C1 /* AppDelegate.swift in Sources */,
 				039346CE25F744F80046E7DD /* FoodViewController.swift in Sources */,
+				039346D125F74E600046E7DD /* AddressViewController.swift in Sources */,
 				03E9C8F425F65C7700B7B1C1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

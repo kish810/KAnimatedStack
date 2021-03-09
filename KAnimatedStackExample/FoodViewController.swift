@@ -126,8 +126,6 @@ class FoodCell: UITableViewCell {
 
 class FoodViewController: UITableViewController {
 
-    private var values: [Int: Double] = [:]
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configureView()
