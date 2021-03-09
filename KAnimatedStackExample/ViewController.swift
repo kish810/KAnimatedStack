@@ -37,26 +37,48 @@ extension ViewController: StackViewDelegate {
     }
     
     func numberOfItems(in stackView: StackView) -> Int {
-        return 2
+        return 3
     }
     
     func controller(forIndex index: Int, stackView: StackView) -> UIViewController? {
-        let controller = UITableViewController()
-        controller.view.backgroundColor = .secondarySystemBackground
-        return controller
+        
+        switch index {
+        case 0:
+            return FoodViewController()
+        case 1:
+            return FoodViewController()
+        default:
+            return FoodViewController()
+        }
     }
     
     func inactiveView(forIndex index: Int, stackView: StackView) -> UIView {
         let label = UILabel()
-        label.text = "Hello \(index)"
         label.setContentHuggingPriority(.required, for: .vertical)
         label.setContentCompressionResistancePriority(.required, for: .vertical)
         label.font = .systemFont(ofSize: 16, weight: .medium)
+        
+        switch index {
+        case 0:
+            label.text = "3 items in basket"
+        case 1:
+            label.text = "Shipping to home"
+        default:
+            label.text = "Paying by ABCD bank"
+        }
+        
         return label
     }
     
     func collapsedTitle(forIndex index: Int, stackView: StackView) -> String {
-        return "Collapsed \(index)"
+        switch index {
+        case 0:
+            return "Order items"
+        case 1:
+            return "Shipping Address"
+        default:
+            return "Payment"
+        }
     }
     
     func properties(forIndex index: Int, stackView: StackView) -> StackCard.Properties {
